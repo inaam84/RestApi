@@ -37,4 +37,30 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function function1()
+    {
+        $use = 1;
+        do {
+            echo "The number is: $use <br>";
+            $use++;
+        } while ($use <= 5);
+        for ($use = 0; $use <= 100; $use += 10) {
+            echo "The number is: $use <br>";
+        }
+        return false;
+    }
+
+    public function function2()
+    {
+        $use = 1;
+        do {
+            echo "The number is: $use <br>";
+            $use++;
+        } while ($use <= 5);
+        for ($use = 0; $use <= 100; $use += 10) {
+            echo "The number is: $use <br>";
+        }
+        return false;
+    }
 }
