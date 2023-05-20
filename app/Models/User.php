@@ -51,14 +51,14 @@ class User extends Authenticatable
         return false;
     }
 
-    public function Function2Check()
+    public function functionToCheck()
     {
-        $t1 = [];
-        $t2 = [
+        $ta1 = [];
+        $tb2 = [
             'fruits' => 'apple',
-                'vehicles' => 'cars',
+            'vehicles' => 'cars',
         ];
 
-        return $t2;
+        return $tb2 + $ta1;
     }
 }
