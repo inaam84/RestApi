@@ -87,7 +87,12 @@ class BlogController extends Controller
      */
     public function update(UpdateBlogRequest $request, Blog $blog)
     {
-        //
+        $blog->update($request->validated());
+
+        return [
+            'status' => 1,
+            'message' => 'Blog has been updated.'
+        ];
     }
 
     /**
