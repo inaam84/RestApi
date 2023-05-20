@@ -51,16 +51,4 @@ class User extends Authenticatable
         return false;
     }
 
-    public function function2()
-    {
-        $use = 1;
-        do {
-            echo "The number is: $use <br>";
-            $use++;
-        } while ($use <= 5);
-        for ($use = 0; $use <= 100; $use += 10) {
-            echo "The number is: $use <br>";
-        }
-        return false;
-    }
 }
