@@ -40,7 +40,17 @@ class BlogController extends Controller
      */
     public function store(StoreBlogRequest $request)
     {
-        //
+        $validated = $request->validated();
+
+        Blog::ceraet([
+            'title' => $validated['title'],
+            'body' => $validated['body'],
+        ]);
+
+        return [
+            'status' => 1,
+            'message' => 'Blog created successfully',
+        ];
     }
 
     /**
