@@ -51,4 +51,14 @@ class User extends Authenticatable
         return false;
     }
 
+    public function Function2Check()
+    {
+        $t1 = [];
+        $t2 = [
+            'fruits' => 'apple',
+                'vehicles' => 'cars',
+        ];
+
+        return $t2;
+    }
 }
