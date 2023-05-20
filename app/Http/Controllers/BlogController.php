@@ -98,6 +98,10 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        //
+        $blog->delete();
+        return [
+            'status' => 1,
+            'message' => 'Blog deleted successfully.',
+        ];
     }
 }
